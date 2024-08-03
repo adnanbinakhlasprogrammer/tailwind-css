@@ -8,6 +8,22 @@
     }
 }
 
-.btn {
-    @apply mx-4 my-4 bg-purple text-white px-5 py-2 rounded-lg font-bold focus:ring-4 outline-none ring-tahiti ring-offset-2 hover:bg-midnight transition-colors duration-300
+@layer components {
+    .btn {
+            @apply mx-4 my-4  text-white px-5 py-2 rounded-lg font-bold focus:ring-4 outline-none ring-tahiti ring-offset-2 transition-colors duration-300
+    }
+
+    .btn-purple {
+        @apply bg-purple hover:bg-midnight 
+    }
+}
+
+@layer utilities {
+    .green {
+        color: #565584;
+    }
+
+    .blue {
+        background-color: #130f40;
+    }
 }
