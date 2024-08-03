@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,57 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/input.css">
 </head>
+
 <body>
     <header class="bg-blue-500 py-4 relative">
-        <div class="container mx-auto w-3/4 flex justify-between items-center">
-            <a class="flex items-center gap-x-2 font-semibold text-white text-2xl" href="#"><img class="w-6" src="./images/lock.svg" alt="Lock_Icon"> Secured Area</a>
+        <div class="wrapper w-11/12 justify-between items-center">
+            <a class="flex items-center gap-x-2 font-semibold text-white text-2xl" href="#"><img class="w-6"
+                    src="./images/lock.svg" alt="Lock_Icon"> Secured Area</a>
             <nav>
                 <button class="text-white align-middle sm:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                      
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
                 </button>
-                <ul class="absolute w-full top-0 left-0 p-4 bg-blue-500 text-center text-white font-semibold space-y-2 hidden sm:block sm:static sm:flex sm:space-y-0 gap-8 sm:text-xl">
+                <ul
+                    class="absolute w-full top-0 left-0 p-4 bg-blue-500 text-center text-white font-semibold space-y-2 hidden sm:block sm:static sm:flex items-center sm:space-y-0 gap-8 sm:text-xl">
                     <li><a class="hover-blue" href="#">Home</a></li>
                     <li><a class="hover-blue" href="#">Contact</a></li>
                     <li><a class="hover-blue" href="#">Login</a></li>
-                    <li><a class="hover-blue" href="#">Sign In</a></li>
+                    <li><a class="btn-blue inline-block transition-colors duration-300" href="#">Sign In</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <main class="bg-blue-100">
+        <section class="wrapper justify-center lg:justify-between items-center flex-col lg:flex-row gap-8 h-screen">
+            <div class="order-2 lg:order-1 bg-blue-500 p-4 rounded-lg text-white space-y-3 w-full lg:w-6/12 h-5/12">
+                <div>
+                    <h3 class="font-bold text-3xl">Welcome Back</h3>
+                    <p class="text-gray-200 text-lg">Please fill the form</p>
+                </div>
+                <form class="space-y-3">
+                    <div class="space-y-1">
+                        <label class="label" for="email">Email:</label>
+                        <input class="input" type="email" id="email" placeholder="Enter your email here">
+                    </div>
+                    <div class="space-y-1">
+                        <label class="label" for="password">Password:</label>
+                        <input class="input" type="password" id="password" placeholder="Enter your password here">
+                    </div>
+                    <input class="btn-blue inline-block transition-colors duration-300 w-full" type="submit" value="Sing In">
+                </form>
+                <p class="text-sm text-gray-200">Don't Have an Account? <a class="text-blue-900 font-bold text-base hover:underline" href="#">Sign Up</a></p>
+            </div>
+            <div class="order-1 lg:order-2 lg:w-6/12">
+                <img class="lg:h-full object-cover align-middle" src="./images/login.svg" alt="Login_Image">
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

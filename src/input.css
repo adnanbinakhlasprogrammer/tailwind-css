@@ -6,4 +6,16 @@
     .hover-blue {
         @apply transition-colors duration-300 hover:text-blue-900
     }
+    .btn-blue {
+        @apply bg-blue-900 hover:bg-blue-950 text-white rounded-lg px-4 py-3 focus:ring-4 ring-blue-800
+    }
+    .label {
+        @apply text-gray-100 font-semibold
+    }
+    .input {
+        @apply w-full p-2 rounded outline-none focus:ring-4 ring-blue-800 bg-blue-400 text-xs text-white placeholder:text-white
+    }
+    .wrapper {
+        @apply container mx-auto w-11/12 sm:w-3/4 flex
+    }
 }
