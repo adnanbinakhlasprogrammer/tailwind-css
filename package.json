@@ -4,7 +4,8 @@
   "description": "You can get the complete Tailwind source here.",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
